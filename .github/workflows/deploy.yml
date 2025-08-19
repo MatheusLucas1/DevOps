@@ -10,13 +10,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: PR Linter
-        uses: yogevbd/pr-lint-action@1.0.1
+
       - name: ChatGPT CodeReviewer
         uses: anc95/ChatGPT-CodeReview@v1.0.22
 
       - name: Super-Linter
         uses: super-linter/super-linter@v8.0.0
-
-      - name: OpenCommit — improve commits with AI
-        uses: di-sukharev/opencommit@github-action-v1.0.2
